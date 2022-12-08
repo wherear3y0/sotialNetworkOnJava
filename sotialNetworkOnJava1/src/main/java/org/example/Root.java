@@ -1,5 +1,6 @@
 package org.example;
 
+import com.google.gson.annotations.SerializedName;
 import jsonClasses.friends;
 import jsonClasses.likes;
 import jsonClasses.posts;
@@ -7,8 +8,11 @@ import jsonClasses.posts;
 import java.util.List;
 
 public class Root {
+    @SerializedName("friends")
     private List<friends> Friends;
+    @SerializedName("likes")
     private List<likes> Likes;
+    @SerializedName("posts")
     private List<posts> Posts;
 
 
