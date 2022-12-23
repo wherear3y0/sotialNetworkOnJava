@@ -7,6 +7,11 @@ public class Photo {
     private int PhotoId; // айди фото
     private int MainPhotoId; // айди фото которое стоит на автарке
 
+    public Photo(int photoId, int mainPhotoId) {
+        PhotoId = photoId;
+        MainPhotoId = mainPhotoId;
+    }
+
     //геттеры и сеттеры
     public int getPhotoId(){
         return PhotoId;
