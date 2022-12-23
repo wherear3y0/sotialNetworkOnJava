@@ -1,5 +1,7 @@
 package org.example;
 
+import Description.Person;
+
 public class PersonService {
     private PersonStorage storage;
     PersonService() {
