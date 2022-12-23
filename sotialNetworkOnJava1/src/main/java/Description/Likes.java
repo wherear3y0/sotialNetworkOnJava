@@ -2,22 +2,27 @@ package Description;
 
 public class Likes {
 
-    private boolean LikeCheck; // проверка стоит ли лайк
+    private int likeIdPerson;// проверка стоит ли лайк
+    private int likerIdPerson; // количество лайков
 
-    private int LikeQuantity; // количество лайков
+
+    public Likes(int likeIdPerson, int likerIdPerson) {
+        this.likeIdPerson = likeIdPerson;
+        this.likerIdPerson = likerIdPerson;
+    }
 
     // геттеры и сеттеры
-    public boolean getLikeCheck(){
-        return LikeCheck;
+    public int getlikeIdPerson(){
+        return likeIdPerson;
     }
-    public void setLikeCheck(boolean LikeCheck){
-        this.LikeCheck = LikeCheck;
+    public void setlikeIdPerson( int LikeCheck){
+        this.likeIdPerson = LikeCheck;
     }
 
-    public int getLikeQuantity(){
-        return LikeQuantity;
+    public int getlikerIdPerson(){
+        return likerIdPerson;
     }
-    public void setLikeQuantity(int LikeQuantity){
-        this.LikeQuantity = LikeQuantity;
+    public void setLikerIdPerson(int likerIdPerson){
+        this.likerIdPerson = likerIdPerson;
     }
 }
